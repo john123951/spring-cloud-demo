@@ -1,0 +1,10 @@
+#spring.cloud.config.uri: http://myconfigserver.com
+spring:
+  application:
+    name: config-client
+  profiles:
+    active: dev,production
+  cloud:
+    config:
+      uri: http://127.0.0.1:8889
+      failFast: true
