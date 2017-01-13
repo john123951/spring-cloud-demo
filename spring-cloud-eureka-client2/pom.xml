@@ -2,15 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>spring-cloud-config-client</artifactId>
-        <groupId>sweet</groupId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../spring-cloud-config-client/pom.xml</relativePath>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>sweet</groupId>
     <artifactId>spring-cloud-eureka-client2</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>spring-cloud-eureka-client2</name>
+    <url>http://maven.apache.org</url>
 
     <dependencyManagement>
         <dependencies>
@@ -53,7 +52,6 @@
             <artifactId>feign-httpclient</artifactId>
             <version>8.18.0</version>
         </dependency>
-
 
     </dependencies>
 

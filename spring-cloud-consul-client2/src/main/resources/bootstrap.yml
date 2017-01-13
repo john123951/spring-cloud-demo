@@ -1,0 +1,12 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: consul-client2
+  profiles:
+    active: dev,production
+  cloud:
+    consul:
+        host: localhost
+        port: 8500

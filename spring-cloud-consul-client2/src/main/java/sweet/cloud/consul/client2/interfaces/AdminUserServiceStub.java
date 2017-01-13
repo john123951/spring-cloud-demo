@@ -1,4 +1,4 @@
-package sweet.cloud.eureka.client2.interfaces;
+package sweet.cloud.consul.client2.interfaces;
 
 import org.springframework.stereotype.Component;
 
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
  * Created by sweet on 17-1-12.
  */
 @Component
-public class UserServiceStub implements IUserService {
+public class AdminUserServiceStub implements IAdminUserService {
 
     @Override
     public String test() {

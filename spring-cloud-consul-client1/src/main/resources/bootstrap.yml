@@ -1,0 +1,15 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: consul-client1
+  profiles:
+    active: dev,production
+  cloud:
+    consul:
+        host: localhost
+        port: 8500
+        discovery:
+          healthCheckPath: /health/ping
+          healthCheckInterval: 15s
