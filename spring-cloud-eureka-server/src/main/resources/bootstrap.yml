@@ -9,10 +9,8 @@ spring:
 #      uri: http://127.0.0.1:8889
 #      failFast: true
 
-#management:
-#  context-path: /admin
-
 eureka:
+#  environment: test
   instance:
     hostname: localhost
 #    statusPageUrlPath: ${management.context-path}/info

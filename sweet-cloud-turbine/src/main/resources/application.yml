@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: monitor-turbine
+  profiles:
+    active: dev,production
+
+eureka:
+  instance:
+    preferIpAddress: true
+
+turbine:
+  appConfig: eureka-client1,eureka-client2,eureka-client3
+  clusterNameExpression: "'default'"
+# 配置turbine
+#  aggregator:
+#    clusterConfig: MAIN
+#  clusterNameExpression: metadata['cluster']

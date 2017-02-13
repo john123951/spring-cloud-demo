@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-client3
+  profiles:
+    active: dev,production
+
+eureka:
+  instance:
+    preferIpAddress: true
+# 配置turbine
+#    metadata-map:
+#      cluster: MAIN
