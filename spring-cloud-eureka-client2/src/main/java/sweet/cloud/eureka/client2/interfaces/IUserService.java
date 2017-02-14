@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(name = "eureka-client1", fallback = UserServiceStub.class)
 public interface IUserService {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/test")
+    @RequestMapping(method = RequestMethod.GET, value = "/user/test")
     String test();
 }

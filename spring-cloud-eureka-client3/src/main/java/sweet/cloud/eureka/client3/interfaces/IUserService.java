@@ -13,9 +13,9 @@ import sweet.cloud.eureka.client3.domain.user.LoginRequest;
 @FeignClient(name = "eureka-client1", fallbackFactory = UserServiceFallbackFactory.class)
 public interface IUserService {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/test")
+    @RequestMapping(method = RequestMethod.GET, value = "/user/test")
     String test();
 
-    @RequestMapping(method = RequestMethod.POST, value = "/login")
+    @RequestMapping(method = RequestMethod.POST, value = "/user/login")
     LoginApiResponse login(LoginRequest request);
 }

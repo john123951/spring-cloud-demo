@@ -14,12 +14,12 @@ import java.util.Date;
 @RestController
 public class UserController {
 
-    @RequestMapping("/test")
+    @RequestMapping("/user/test")
     public String test() {
         return new Date().toString();
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/login", method = RequestMethod.POST)
     public LoginApiResponse login(LoginRequest request) {
 
         LoginApiResponse response = LoginApiResponse.success(LoginApiResponse.class);

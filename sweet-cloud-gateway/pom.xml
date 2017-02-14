@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>sweet</groupId>
-    <artifactId>spring-cloud-consul-client2</artifactId>
+    <artifactId>sweet-cloud-gateway</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencyManagement>
@@ -32,27 +32,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
 
-        <!-- 使用feign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.netflix.feign</groupId>
-            <artifactId>feign-httpclient</artifactId>
-            <version>8.18.0</version>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
 
-        <!--暴露监控指标-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
@@ -71,4 +61,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
