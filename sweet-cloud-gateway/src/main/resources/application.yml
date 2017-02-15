@@ -16,12 +16,21 @@ eureka:
 
 zuul:
   prefix: /api
-#  ignoredServices: '*'
+  ignoredServices: '*'
+  routes:
+    eureka-client1:
+      path: /user/**
+      serviceId: eureka-client1
+      stripPrefix: false  # 转发时包含前缀
+    test: /test/**
 #  ignoredPatterns: /health,/error
 #  retryable: true
-  routes:
-    eureka-client1: /user/**
+  addProxyHeaders: false
+  forceOriginalQueryStringEncoding: true  # 使用原始的编码
+
+management:
+  addApplicationContextHeader: false  # "X-Application-Context"
 
 #ribbon:
 #  eureka:
-#    enabled: false #配置zuul路由时用将此属性设置为false
+#    enabled: false #自定义负载均衡
